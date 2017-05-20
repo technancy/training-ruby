@@ -1,0 +1,18 @@
+<html>
+  <head></head>
+  <body>
+  	<div class="message"><%= message %></div><br/>
+    <ul>
+      <% books.each do |book| %>
+        <li class='result'><%= book %></li>
+      <% end %>
+    </ul>
+
+    <div class="total">The library contains <b><%= total %></b> book(s).<br><br/></div>
+
+	<a href="/"><b>SEARCH</b> for a book</a><br/>
+	<a href="/add"><b>ADD</b> a book to the library</a><br>
+  <a href="/remove"><b>REMOVE</b> a book from the library</a>
+
+  </body>
+</html>
